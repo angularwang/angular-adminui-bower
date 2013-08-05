@@ -802,6 +802,8 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
               chosenEl.trigger('liszt:updated');
               chosen.search_field.val(searchTxt.$search);
             });
+          } else if (chosen.active_field) {
+            initOptions = optionsModelGetter(scope);
           }
         });
         chosenEl.bind('liszt:showing_dropdown', function (e, data) {
