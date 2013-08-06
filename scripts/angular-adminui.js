@@ -1,3 +1,30 @@
+(function () {
+  function flashService($rootScope) {
+    return {
+      notify: function (message) {
+        $rootScope.$emit('event:notification', message);
+      }
+    };
+  }
+  angular.module('ntd.services', []).factory('flash', [
+    '$rootScope',
+    flashService
+  ]);
+}());
+(function () {
+  'use strict';
+  function flashMessageService($rootScope) {
+    return {
+      notify: function (message) {
+        $rootScope.$emit('event:flashMessageEvent', message);
+      }
+    };
+  }
+  angular.module('ntd.services').factory('flashMessage', [
+    '$rootScope',
+    flashMessageService
+  ]);
+}());
 'use strict';
 angular.module('ntd.config', []).value('$ntdConfig', {});
 angular.module('ntd.directives', ['ntd.config']);
@@ -769,9 +796,6 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
           var optionsModelGetter = $parse(optionsModelName);
           var optionsModelSetter = optionsModelGetter.assign;
           scope.$watch(optionsModelName, function (newValue, oldValue) {
-            if (onSearch && newValue) {
-              initOptions = newValue;
-            }
             chosenEl.trigger('liszt:data_loaded', {
               options: newValue,
               optionsModelName: optionsModelName
@@ -805,6 +829,8 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
               chosenEl.trigger('liszt:updated');
               chosen.search_field.val(searchTxt.$search);
             });
+          } else if (chosen.active_field) {
+            initOptions = optionsModelGetter(scope);
           }
         });
         chosenEl.bind('liszt:showing_dropdown', function (e, data) {
@@ -852,6 +878,9 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
           if (onSearch) {
             chosen.search_field.removeClass('loading');
             if (ng.isArray(data.options) && data.options.length > 0) {
+              if (!initOptions) {
+                initOptions = data.options;
+              }
               optionsModelSetter(scope, data.options);
             } else {
               optionsModelSetter(scope, []);
@@ -1138,5 +1167,46 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
     '$location',
     '$timeout',
     noticeDirective
+  ]);
+}());
+(function () {
+  'use strict';
+  function flashAlertDirective(flashMessage, $rootScope, $timeout) {
+    function build_msg(type, message) {
+      var html = '<div class="alert alert-' + type + '">' + message + '<button type="button" class="close">\xd7</button>' + '</div>';
+      return html;
+    }
+    return {
+      scope: true,
+      link: function ($scope, element, attr) {
+        var html_fragement = '', flag = false;
+        $rootScope.$on('event:flashMessageEvent', function (event, msg) {
+          if (angular.isArray(msg)) {
+            angular.forEach(msg, function (item, key) {
+              html_fragement += build_msg(item.type, item.message);
+            });
+          } else {
+            html_fragement += build_msg(item.type, item.message);
+          }
+        });
+        $rootScope.$on('$routeChangeSuccess', function () {
+          if (html_fragement) {
+            element.append(html_fragement);
+            $('.close', element).bind('click', function () {
+              $(this).parent('.alert').remove();
+            });
+            html_fragement = '';
+          } else {
+            element.empty();
+          }
+        });
+      }
+    };
+  }
+  angular.module('ntd.directives').directive('flashAlert', [
+    'flashMessage',
+    '$rootScope',
+    '$timeout',
+    flashAlertDirective
   ]);
 }());
