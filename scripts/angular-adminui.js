@@ -1,3 +1,30 @@
+(function () {
+  function flashService($rootScope) {
+    return {
+      notify: function (message) {
+        $rootScope.$emit('event:notification', message);
+      }
+    };
+  }
+  angular.module('ntd.services', []).factory('flash', [
+    '$rootScope',
+    flashService
+  ]);
+}());
+(function () {
+  'use strict';
+  function flashMessageService($rootScope) {
+    return {
+      notify: function (message) {
+        $rootScope.$emit('event:flashMessageEvent', message);
+      }
+    };
+  }
+  angular.module('ntd.services').factory('flashMessage', [
+    '$rootScope',
+    flashMessageService
+  ]);
+}());
 'use strict';
 angular.module('ntd.config', []).value('$ntdConfig', {});
 angular.module('ntd.directives', ['ntd.config']);
