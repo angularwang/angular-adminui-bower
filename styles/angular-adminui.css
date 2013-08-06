@@ -44,7 +44,7 @@ html {
 
 /* line 50, ../../app/styles/compass_twitter_bootstrap/_reset.scss */
 a:focus {
-  outline: thin dotted #333333;
+  outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -163,7 +163,7 @@ textarea {
   /* line 155, ../../app/styles/compass_twitter_bootstrap/_reset.scss */
   * {
     text-shadow: none !important;
-    color: black !important;
+    color: #000 !important;
     background: transparent !important;
     box-shadow: none !important;
   }
@@ -194,7 +194,7 @@ textarea {
   /* line 183, ../../app/styles/compass_twitter_bootstrap/_reset.scss */
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid;
   }
 
@@ -265,7 +265,7 @@ a:hover {
 .img-polaroid {
   padding: 4px;
   background-color: #fff;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -1055,7 +1055,7 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   background-color: #f5f5f5;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1282,7 +1282,7 @@ select:focus,
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted #333333;
+  outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1823,7 +1823,7 @@ select:focus:invalid:focus {
   text-align: center;
   text-shadow: 0 1px 0 white;
   background-color: #eeeeee;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
 }
 /* line 466, ../../app/styles/compass_twitter_bootstrap/_forms.scss */
 .input-append .add-on,
@@ -2426,27 +2426,27 @@ table th[class*="span"],
 
 /* line 48, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-glass {
-  background-position: 0 0;
+  background-position: 0      0;
 }
 
 /* line 49, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-music {
-  background-position: -24px 0;
+  background-position: -24px  0;
 }
 
 /* line 50, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-search {
-  background-position: -48px 0;
+  background-position: -48px  0;
 }
 
 /* line 51, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-envelope {
-  background-position: -72px 0;
+  background-position: -72px  0;
 }
 
 /* line 52, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-heart {
-  background-position: -96px 0;
+  background-position: -96px  0;
 }
 
 /* line 53, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
@@ -2526,27 +2526,27 @@ table th[class*="span"],
 
 /* line 69, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-home {
-  background-position: 0 -24px;
+  background-position: 0      -24px;
 }
 
 /* line 70, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-file {
-  background-position: -24px -24px;
+  background-position: -24px  -24px;
 }
 
 /* line 71, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-time {
-  background-position: -48px -24px;
+  background-position: -48px  -24px;
 }
 
 /* line 72, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-road {
-  background-position: -72px -24px;
+  background-position: -72px  -24px;
 }
 
 /* line 73, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-download-alt {
-  background-position: -96px -24px;
+  background-position: -96px  -24px;
 }
 
 /* line 74, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
@@ -2626,27 +2626,27 @@ table th[class*="span"],
 
 /* line 90, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-tag {
-  background-position: 0 -48px;
+  background-position: 0      -48px;
 }
 
 /* line 91, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-tags {
-  background-position: -25px -48px;
+  background-position: -25px  -48px;
 }
 
 /* line 92, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-book {
-  background-position: -48px -48px;
+  background-position: -48px  -48px;
 }
 
 /* line 93, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-bookmark {
-  background-position: -72px -48px;
+  background-position: -72px  -48px;
 }
 
 /* line 94, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-print {
-  background-position: -96px -48px;
+  background-position: -96px  -48px;
 }
 
 /* line 95, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
@@ -2726,27 +2726,27 @@ table th[class*="span"],
 
 /* line 111, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-pencil {
-  background-position: 0 -72px;
+  background-position: 0      -72px;
 }
 
 /* line 112, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-map-marker {
-  background-position: -24px -72px;
+  background-position: -24px  -72px;
 }
 
 /* line 113, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-adjust {
-  background-position: -48px -72px;
+  background-position: -48px  -72px;
 }
 
 /* line 114, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-tint {
-  background-position: -72px -72px;
+  background-position: -72px  -72px;
 }
 
 /* line 115, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-edit {
-  background-position: -96px -72px;
+  background-position: -96px  -72px;
 }
 
 /* line 116, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
@@ -2826,27 +2826,27 @@ table th[class*="span"],
 
 /* line 132, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-plus-sign {
-  background-position: 0 -96px;
+  background-position: 0      -96px;
 }
 
 /* line 133, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-minus-sign {
-  background-position: -24px -96px;
+  background-position: -24px  -96px;
 }
 
 /* line 134, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-remove-sign {
-  background-position: -48px -96px;
+  background-position: -48px  -96px;
 }
 
 /* line 135, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-ok-sign {
-  background-position: -72px -96px;
+  background-position: -72px  -96px;
 }
 
 /* line 136, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-question-sign {
-  background-position: -96px -96px;
+  background-position: -96px  -96px;
 }
 
 /* line 137, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
@@ -2926,27 +2926,27 @@ table th[class*="span"],
 
 /* line 153, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-exclamation-sign {
-  background-position: 0 -120px;
+  background-position: 0      -120px;
 }
 
 /* line 154, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-gift {
-  background-position: -24px -120px;
+  background-position: -24px  -120px;
 }
 
 /* line 155, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-leaf {
-  background-position: -48px -120px;
+  background-position: -48px  -120px;
 }
 
 /* line 156, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-fire {
-  background-position: -72px -120px;
+  background-position: -72px  -120px;
 }
 
 /* line 157, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-eye-open {
-  background-position: -96px -120px;
+  background-position: -96px  -120px;
 }
 
 /* line 158, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
@@ -3028,27 +3028,27 @@ table th[class*="span"],
 
 /* line 174, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-hdd {
-  background-position: 0 -144px;
+  background-position: 0      -144px;
 }
 
 /* line 175, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-bullhorn {
-  background-position: -24px -144px;
+  background-position: -24px  -144px;
 }
 
 /* line 176, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-bell {
-  background-position: -48px -144px;
+  background-position: -48px  -144px;
 }
 
 /* line 177, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-certificate {
-  background-position: -72px -144px;
+  background-position: -72px  -144px;
 }
 
 /* line 178, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
 .icon-thumbs-up {
-  background-position: -96px -144px;
+  background-position: -96px  -144px;
 }
 
 /* line 179, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
@@ -3174,7 +3174,7 @@ table th[class*="span"],
   margin: 2px 0 0;
   list-style: none;
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   *border-right-width: 2px;
   *border-bottom-width: 2px;
@@ -3528,7 +3528,7 @@ button.close {
 }
 /* line 43, ../../app/styles/compass_twitter_bootstrap/_buttons.scss */
 .btn:focus {
-  outline: thin dotted #333333;
+  outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -4369,7 +4369,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 111, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
 }
 
 /* line 115, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
@@ -4397,7 +4397,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a:hover {
   color: #555555;
   background-color: #fdfdfd;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -4437,7 +4437,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 176, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
 .nav-tabs.nav-stacked > li > a {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -4594,7 +4594,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 305, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
 .tabs-below > .nav-tabs {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 
 /* line 308, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
@@ -4618,7 +4618,7 @@ input[type="submit"].btn.btn-mini {
 /* line 320, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
 .tabs-below > .nav-tabs > .active > a,
 .tabs-below > .nav-tabs > .active > a:hover {
-  border-color: transparent #dddddd #dddddd #dddddd;
+  border-color: transparent #ddd #ddd #ddd;
 }
 
 /* line 329, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
@@ -4639,7 +4639,7 @@ input[type="submit"].btn.btn-mini {
 .tabs-left > .nav-tabs {
   float: left;
   margin-right: 19px;
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid #ddd;
 }
 
 /* line 345, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
@@ -4658,7 +4658,7 @@ input[type="submit"].btn.btn-mini {
 /* line 353, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover {
-  border-color: #dddddd transparent #dddddd #dddddd;
+  border-color: #ddd transparent #ddd #ddd;
   *border-right-color: white;
 }
 
@@ -4666,7 +4666,7 @@ input[type="submit"].btn.btn-mini {
 .tabs-right > .nav-tabs {
   float: right;
   margin-left: 19px;
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid #ddd;
 }
 
 /* line 364, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
@@ -4685,7 +4685,7 @@ input[type="submit"].btn.btn-mini {
 /* line 372, ../../app/styles/compass_twitter_bootstrap/_navs.scss */
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover {
-  border-color: #dddddd #dddddd #dddddd transparent;
+  border-color: #ddd #ddd #ddd transparent;
   *border-left-color: white;
 }
 
@@ -5063,7 +5063,7 @@ input[type="submit"].btn.btn-mini {
   display: inline-block;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid #cccccc;
+  border-bottom: 7px solid #ccc;
   border-bottom-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   top: -7px;
@@ -5083,7 +5083,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 323, ../../app/styles/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-bottom .nav > li > .dropdown-menu:before {
-  border-top: 7px solid #cccccc;
+  border-top: 7px solid #ccc;
   border-top-color: rgba(0, 0, 0, 0.2);
   border-bottom: 0;
   bottom: -7px;
@@ -5517,7 +5517,7 @@ input[type="submit"].btn.btn-mini {
   display: inline-block;
   padding: 5px 14px;
   background-color: #fff;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -5581,9 +5581,9 @@ input[type="submit"].btn.btn-mini {
   width: 560px;
   margin-left: -280px;
   background-color: white;
-  border: 1px solid #999999;
+  border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  *border: 1px solid #999999;
+  *border: 1px solid #999;
   /* IE6-7 */
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -5612,7 +5612,7 @@ input[type="submit"].btn.btn-mini {
 /* line 47, ../../app/styles/compass_twitter_bootstrap/_modals.scss */
 .modal-header {
   padding: 9px 15px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
 }
 /* line 51, ../../app/styles/compass_twitter_bootstrap/_modals.scss */
 .modal-header .close {
@@ -5643,7 +5643,7 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 0;
   text-align: right;
   background-color: #f5f5f5;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
@@ -5778,7 +5778,7 @@ input[type="submit"].btn.btn-mini {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -5945,7 +5945,7 @@ input[type="submit"].btn.btn-mini {
   display: block;
   padding: 4px;
   line-height: 20px;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -6817,7 +6817,7 @@ a.label:hover, a.badge:hover {
   /* line 136, ../../app/styles/compass_twitter_bootstrap/_responsive-767px-max.scss */
   input[type="checkbox"],
   input[type="radio"] {
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
   }
 
   /* line 142, ../../app/styles/compass_twitter_bootstrap/_responsive-767px-max.scss */
@@ -8426,7 +8426,7 @@ form.form-horizontal .help-block {
 
 /* line 286, ../../app/styles/ntd-main.scss */
 .div-stacked {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -8435,7 +8435,7 @@ form.form-horizontal .help-block {
 }
 /* line 289, ../../app/styles/ntd-main.scss */
 .div-stacked .stacked-item {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
 }
 /* line 291, ../../app/styles/ntd-main.scss */
 .div-stacked .stacked-item:last-child {
@@ -8449,7 +8449,7 @@ form.form-horizontal .help-block {
 /* line 299, ../../app/styles/ntd-main.scss */
 .div-stacked .stacked-item-bd {
   padding: 8px;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 /* line 303, ../../app/styles/ntd-main.scss */
 .div-stacked .stacked-item-bd .table-normal {
@@ -8491,7 +8491,7 @@ form.form-horizontal .help-block {
 /* line 327, ../../app/styles/ntd-main.scss */
 .box .box-bd {
   padding: 8px;
-  border: solid #dddddd;
+  border: solid #ddd;
   border-width: 0 1px 1px;
   background-color: white;
   -moz-border-radius-bottomleft: 4px;
@@ -9054,10 +9054,10 @@ form.form-horizontal .help-block {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-transition: border linear .2s, box-shadow linear .2s;
+  -moz-transition: border linear .2s, box-shadow linear .2s;
+  -o-transition: border linear .2s, box-shadow linear .2s;
+  transition: border linear .2s, box-shadow linear .2s;
 }
 
 /* line 749, ../../app/styles/ntd-main.scss */
@@ -9067,10 +9067,10 @@ form.form-horizontal .help-block {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-transition: border linear .2s, box-shadow linear .2s;
+  -moz-transition: border linear .2s, box-shadow linear .2s;
+  -o-transition: border linear .2s, box-shadow linear .2s;
+  transition: border linear .2s, box-shadow linear .2s;
 }
 
 /* line 760, ../../app/styles/ntd-main.scss */
@@ -9109,7 +9109,7 @@ form.form-horizontal .help-block {
 
 /* line 781, ../../app/styles/ntd-main.scss */
 .chzn-container-active .chzn-choices .search-field input {
-  color: #111111 !important;
+  color: #111 !important;
 }
 
 /* line 784, ../../app/styles/ntd-main.scss */
@@ -9408,7 +9408,7 @@ table .sort-desc .sort-icon {
   margin-bottom: 0;
   vertical-align: middle;
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   padding: 4px;
   font-size: 14px;
   font-weight: normal;
@@ -9523,7 +9523,7 @@ table .sort-desc .sort-icon {
 .login-box h3 {
   color: #fff;
   font-weight: normal;
-  text-shadow: 0px 0px 3px #999999;
+  text-shadow: 0px 0px 3px #999;
 }
 /* line 28, ../../app/styles/ntd-login.scss */
 .login-box input[type="text"], .login-box input[type="password"] {
@@ -9626,7 +9626,7 @@ table .sort-desc .sort-icon {
   background: #fafafa;
   border-radius: 4px;
   color: rgba(0, 0, 0, 0.8);
-  text-shadow: 0 1px 0 white;
+  text-shadow: 0 1px 0 #fff;
 }
 
 @media (max-width: 767px) {
