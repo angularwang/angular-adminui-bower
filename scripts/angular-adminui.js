@@ -1,8 +1,12 @@
 (function () {
   function flashService($rootScope) {
     return {
-      notify: function (message) {
-        $rootScope.$emit('event:notification', message);
+      notify: function (message, isFlash) {
+        if (isFlash) {
+          $rootScope.$emit('event:flashMessageEvent', message);
+        } else {
+          $rootScope.$emit('event:notification', message);
+        }
       }
     };
   }
@@ -79,6 +83,7 @@ angular.module('ntd.directives', ['ntd.config']);
   function confirmButtonDirective($document, $parse) {
     return {
       restrict: 'A',
+      scope: '@',
       link: function (scope, element, attrs) {
         var buttonId, html, message, nope, title, yep, pos;
         buttonId = Math.floor(Math.random() * 10000000000);
@@ -88,7 +93,7 @@ angular.module('ntd.directives', ['ntd.config']);
         nope = attrs.no || '\u53d6\u6d88';
         title = attrs.title || '\u786e\u8ba4\u5220\u9664?';
         pos = attrs.position || 'top';
-        html = '<div id="button-' + buttonId + '">' + '<span class="confirmbutton-msg">' + message + '</span>' + '<button type="button" class="confirmbutton-yes btn btn-primary">' + yep + '</button>\n' + '<button type="button" class="confirmbutton-no btn">' + nope + '</button>' + '</div>';
+        html = '<div id="button-' + buttonId + '">' + '<p ng-show="test" class="confirmbutton-msg">' + message + '</p>' + '<button type="button" class="confirmbutton-yes btn btn-primary">' + yep + '</button>\n' + '<button type="button" class="confirmbutton-no btn">' + nope + '</button>' + '</div>';
         element.popover({
           content: html,
           html: true,
@@ -1171,29 +1176,32 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
 }());
 (function () {
   'use strict';
+  function build_msg(type, message) {
+    var html = '<div class="alert alert-' + type + '">' + message + '<button type="button" class="close">\xd7</button>' + '</div>';
+    return html;
+  }
   function flashAlertDirective(flashMessage, $rootScope, $timeout) {
-    function build_msg(type, message) {
-      var html = '<div class="alert alert-' + type + '">' + message + '<button type="button" class="close">\xd7</button>' + '</div>';
-      return html;
-    }
     return {
       scope: true,
+      restrict: 'EAC',
       link: function ($scope, element, attr) {
-        var html_fragement = '', flag = false;
+        var html_fragement = '';
         $rootScope.$on('event:flashMessageEvent', function (event, msg) {
           if (angular.isArray(msg)) {
             angular.forEach(msg, function (item, key) {
-              html_fragement += build_msg(item.type, item.message);
+              html_fragement += build_msg(item.state, item.info);
             });
           } else {
-            html_fragement += build_msg(item.type, item.message);
+            html_fragement += build_msg(msg.state, msg.info);
           }
         });
         $rootScope.$on('$routeChangeSuccess', function () {
           if (html_fragement) {
             element.append(html_fragement);
             $('.close', element).bind('click', function () {
-              $(this).parent('.alert').remove();
+              $(this).parent('.alert').fadeOut(function () {
+                $(this).remove();
+              });
             });
             html_fragement = '';
           } else {
@@ -1209,4 +1217,26 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
     '$timeout',
     flashAlertDirective
   ]);
+}());
+'use strict';
+(function () {
+  function toggleSwitcherDirective() {
+    return {
+      restrict: 'AC',
+      replace: true,
+      scope: {
+        onTitle: '@onTitle',
+        offTitle: '@offTitle',
+        width: '@width',
+        smallClass: '@smallClass',
+        id: '@',
+        name: '@'
+      },
+      template: '<label class="checkbox toggle {{smallClass}}" style="width:{{width}};">' + '<input id="{{id}}" name="{{name}}" type="checkbox" checked="">' + '<p>' + '<span>{{onTitle}}</span>' + '<span>{{offTitle}}</span>' + '</p>' + '<a class="btn btn-primary slide-button"></a>' + '</label>',
+      link: function (scope, element, attrs) {
+        console.log(scope.width);
+      }
+    };
+  }
+  angular.module('ntd.directives').directive('toggleSwitcher', [toggleSwitcherDirective]);
 }());
