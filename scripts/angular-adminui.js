@@ -1182,7 +1182,6 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
   }
   function flashAlertDirective(flashMessage, $rootScope, $timeout) {
     return {
-      restrict: 'EAC',
       scope: true,
       restrict: 'EAC',
       link: function ($scope, element, attr) {
@@ -1241,4 +1240,3 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
   }
   angular.module('ntd.directives').directive('toggleSwitcher', [toggleSwitcherDirective]);
 }());
-
