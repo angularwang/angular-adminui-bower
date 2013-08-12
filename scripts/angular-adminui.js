@@ -1199,6 +1199,7 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
           }
         });
         $rootScope.$on('$routeChangeSuccess', function () {
+          element.empty();
           if (html_fragement) {
             element.append(html_fragement);
             $('.close', element).bind('click', function () {
@@ -1207,8 +1208,6 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
               });
             });
             html_fragement = '';
-          } else {
-            element.empty();
           }
         });
       }
