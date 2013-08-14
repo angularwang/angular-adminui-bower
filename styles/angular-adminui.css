@@ -9816,24 +9816,20 @@ https://github.com/ghinda/css-toggle-switch
     text-align: left;
   }
 
-  /* line 59, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 57, ../../app/styles/ntd-toggle-switch.scss */
   .toggle p span {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 5;
     display: block;
-    width: 50%;
     margin-left: 100px;
     text-align: center;
+    white-space: nowrap;
+    padding: 0 5px;
   }
 
-  /* line 72, ../../app/styles/ntd-toggle-switch.scss */
-  .toggle p span:last-child {
-    left: 50%;
-  }
-
-  /* line 76, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 69, ../../app/styles/ntd-toggle-switch.scss */
   .toggle .slide-button {
     position: absolute;
     right: 0;
@@ -9847,19 +9843,19 @@ https://github.com/ghinda/css-toggle-switch
 
   /* Radio Switch
    */
-  /* line 90, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 82, ../../app/styles/ntd-toggle-switch.scss */
   .switch {
     position: relative;
     padding: 0;
   }
 
-  /* line 95, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 87, ../../app/styles/ntd-toggle-switch.scss */
   .switch input {
     position: absolute;
     opacity: 0;
   }
 
-  /* line 100, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 92, ../../app/styles/ntd-toggle-switch.scss */
   .switch label {
     position: relative;
     z-index: 2;
@@ -9870,7 +9866,7 @@ https://github.com/ghinda/css-toggle-switch
     text-align: center;
   }
 
-  /* line 112, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 104, ../../app/styles/ntd-toggle-switch.scss */
   .switch .slide-button {
     position: absolute;
     top: 0;
@@ -9881,79 +9877,79 @@ https://github.com/ghinda/css-toggle-switch
     height: 100%;
   }
 
-  /* line 123, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 115, ../../app/styles/ntd-toggle-switch.scss */
   .switch input:last-of-type:checked ~ .slide-button {
     left: 50%;
   }
 
   /* Switch with 3 items */
-  /* line 129, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 121, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-three label,
   .switch.switch-three .slide-button {
     width: 33.3%;
   }
 
-  /* line 133, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 125, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-three input:checked:nth-of-type(2) ~ .slide-button {
     left: 33.3%;
   }
 
-  /* line 137, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 129, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-three input:checked:last-of-type ~ .slide-button {
     left: 66.6%;
   }
 
   /* Switch with 4 items */
-  /* line 143, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 135, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-four label,
   .switch.switch-four .slide-button {
     width: 25%;
   }
 
-  /* line 147, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 139, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-four input:checked:nth-of-type(2) ~ .slide-button {
     left: 25%;
   }
 
-  /* line 151, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 143, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-four input:checked:nth-of-type(3) ~ .slide-button {
     left: 50%;
   }
 
-  /* line 155, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 147, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-four input:checked:last-of-type ~ .slide-button {
     left: 75%;
   }
 
   /* Switch with 5 items */
-  /* line 161, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 153, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-five label,
   .switch.switch-five .slide-button {
     width: 20%;
   }
 
-  /* line 165, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 157, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-five input:checked:nth-of-type(2) ~ .slide-button {
     left: 20%;
   }
 
-  /* line 169, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 161, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-five input:checked:nth-of-type(3) ~ .slide-button {
     left: 40%;
   }
 
-  /* line 173, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 165, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-five input:checked:nth-of-type(4) ~ .slide-button {
     left: 60%;
   }
 
-  /* line 177, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 169, ../../app/styles/ntd-toggle-switch.scss */
   .switch.switch-five input:checked:last-of-type ~ .slide-button {
     left: 80%;
   }
 
   /* Shared */
-  /* line 183, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 175, ../../app/styles/ntd-toggle-switch.scss */
   .toggle,
   .switch {
     display: inline-block;
@@ -9962,17 +9958,17 @@ https://github.com/ghinda/css-toggle-switch
     vertical-align: middle;
   }
 
-  /* line 189, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 181, ../../app/styles/ntd-toggle-switch.scss */
   .toggle.small {
     height: 26px;
   }
 
-  /* line 192, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 184, ../../app/styles/ntd-toggle-switch.scss */
   .toggle.small p {
     line-height: 26px;
   }
 
-  /* line 195, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 187, ../../app/styles/ntd-toggle-switch.scss */
   .toggle {
     min-height: 20px;
     background-color: whitesmoke;
@@ -9985,7 +9981,7 @@ https://github.com/ghinda/css-toggle-switch
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   }
 
-  /* line 208, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 200, ../../app/styles/ntd-toggle-switch.scss */
   .switch *,
   .toggle * {
     -webkit-box-sizing: border-box;
@@ -9995,7 +9991,7 @@ https://github.com/ghinda/css-toggle-switch
     box-sizing: border-box;
   }
 
-  /* line 217, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 209, ../../app/styles/ntd-toggle-switch.scss */
   .switch .slide-button,
   .toggle .slide-button {
     display: block;
@@ -10006,7 +10002,7 @@ https://github.com/ghinda/css-toggle-switch
     transition: all 0.3s ease-out;
   }
 
-  /* line 229, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 221, ../../app/styles/ntd-toggle-switch.scss */
   .toggle label,
   .toggle p,
   .switch label {
@@ -10014,7 +10010,7 @@ https://github.com/ghinda/css-toggle-switch
     vertical-align: middle;
   }
 
-  /* line 233, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 225, ../../app/styles/ntd-toggle-switch.scss */
   .toggle input ~ .slide-button {
     display: inline-block;
     padding: 4px 12px;
@@ -10047,7 +10043,7 @@ https://github.com/ghinda/css-toggle-switch
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   }
 
-  /* line 264, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 256, ../../app/styles/ntd-toggle-switch.scss */
   .toggle input:checked ~ .slide-button {
     color: white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -10065,23 +10061,23 @@ https://github.com/ghinda/css-toggle-switch
     right: 50%;
   }
 
-  /* line 280, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 272, ../../app/styles/ntd-toggle-switch.scss */
   .toggle input:checked ~ .slide-button {
     right: 50%;
   }
 
-  /* line 283, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 275, ../../app/styles/ntd-toggle-switch.scss */
   .toggle input ~ p > span:first-child {
     color: #aaa;
   }
 
-  /* line 286, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 278, ../../app/styles/ntd-toggle-switch.scss */
   .toggle input:checked ~ p > span:first-child {
     color: #fff;
   }
 
   /* Outline the toggles when the inputs are focused */
-  /* line 292, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 284, ../../app/styles/ntd-toggle-switch.scss */
   .toggle input:focus ~ .slide-button,
   .switch input:focus + label {
     outline: 1px dotted #888888;
@@ -10090,20 +10086,36 @@ https://github.com/ghinda/css-toggle-switch
   /* Bugfix for older Webkit, including mobile Webkit. Adapted from:
    * http://css-tricks.com/webkit-sibling-bug/
    */
-  /* line 299, ../../app/styles/ntd-toggle-switch.scss */
+  /* line 291, ../../app/styles/ntd-toggle-switch.scss */
   .switch, .toggle {
     -webkit-animation: bugfix infinite 1s;
   }
 
   @-webkit-keyframes bugfix {
-    /* line 303, ../../app/styles/ntd-toggle-switch.scss */
+    /* line 295, ../../app/styles/ntd-toggle-switch.scss */
     from {
       position: relative;
     }
 
-    /* line 303, ../../app/styles/ntd-toggle-switch.scss */
+    /* line 295, ../../app/styles/ntd-toggle-switch.scss */
     to {
       position: relative;
     }
 }
+
+  /* line 299, ../../app/styles/ntd-toggle-switch.scss */
+  .toggle.disabled a.slide-button {
+    cursor: default;
+    background-image: none;
+    background-color: #E6E6E6;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+    opacity: 0.65;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  /* line 306, ../../app/styles/ntd-toggle-switch.scss */
+  .toggle.disabled span {
+    color: #AAA;
+  }
 }
