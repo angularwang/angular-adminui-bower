@@ -942,11 +942,10 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
   var Linkage = function ($parse) {
     return {
       restrict: 'AC',
-      template: '<span><span' + ' data-ng-repeat="linkage in linkages">' + ' <select data-ntd-chosen' + ' data-ng-change="change($index)"' + ' data-ng-model="values[$index]"' + ' data-allow-single-deselect="true"' + ' data-ng-options="option as option.name' + ' for option in linkage">' + ' <option value=""></option>' + '</select></span></span>',
+      template: '<span><span' + ' data-ng-repeat="linkage in linkages">' + ' <select data-ntd-chosen' + ' data-placeholder="\u8bf7\u9009\u62e9"' + ' data-disable-search-threshold="10"' + ' data-ng-change="change($index)"' + ' data-ng-model="values[$index]"' + ' data-allow-single-deselect="true"' + ' data-ng-options="option as option.name' + ' for option in linkage">' + ' <option value=""></option>' + '</select></span></span>',
       scope: {
         source: '=',
-        ngModel: '=',
-        placeHolders: '='
+        ngModel: '='
       },
       link: function (scope, elem, attrs) {
         var baseLevels;
@@ -1163,7 +1162,7 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
           }
         });
         scope.$watch(function () {
-          return $location.path();
+          return $location.url();
         }, function () {
           element.fadeOut();
         });
