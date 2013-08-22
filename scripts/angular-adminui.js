@@ -764,6 +764,7 @@ angular.module('ntd.directives').directive('nanoScrollbar', [
         var options = { disable_search_threshold: disableSearchThreshold };
         var chosenEl = elem.chosen(options);
         var chosen = chosenEl.data('chosen');
+        chosen.container.css('max-width', chosenEl.css('width'));
         var selected_options = {};
         var searchTxt = scope.$new(false);
         if (onSearch) {

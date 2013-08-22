@@ -9220,6 +9220,11 @@ form.form-horizontal .help-block {
   padding: 4px 5px 4px 20px;
 }
 
+/* line 856, ../../app/styles/ntd-main.scss */
+[class*="span"] .chzn-container {
+  width: 100% !important;
+}
+
 /* line 1, ../../app/styles/ntd-table.scss */
 .table-normal {
   width: 100%;
